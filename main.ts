@@ -488,7 +488,7 @@ async function handleTCPOutBound(
     remoteSocketToWS(tcpSocket, webSocket, vlessResponseHeader, null, log);
   }
 
-  const tcpSocket = await connectAndWrite((proxyIP || addressRemote, portRemote);
+  const tcpSocket = await connectAndWrite(proxyIP || addressRemote, portRemote);
 
   // when remoteSocket is ready, pass to websocket
   // remote--> ws
